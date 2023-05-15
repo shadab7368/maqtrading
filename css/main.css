@@ -1,0 +1,365 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family:"Roboto",sans-serif; 
+   
+}
+
+.text-para{
+    font-size: small;
+    font-style: normal;
+    color: #f60000;
+}
+body{
+    background: #f3efef;
+    
+}
+nav{
+    background: #ffffff;
+   
+}
+card-body{
+    color: black;
+    
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+
+}
+nav .logo{
+    float: left;
+    color: rgb(211, 144, 20);
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 10px;
+    padding-left: 0.5px;
+    width: 329px;
+    height: 123px;
+
+     /* display: none;  */
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li {
+    float: left;
+    display: inline-block;
+    background: #ffffff;
+    margin: 0 5px;
+}
+nav ul li a{
+color: rgba(7, 71, 247, 0.616) ;
+text-decoration: none;  
+line-height: 70px;
+font-size: 15px;
+padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: rgb(243, 190, 14);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+}
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+.fa-plus{
+    margin-left: 40px;
+    font-size: 0px;
+}
+nav ul ul ul {
+    border-top: none;
+}
+nav ul ul {
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+border-top: 3px solid cyan;
+}
+nav ul li:hover> ul{
+   top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li a{
+    line-height: 1px;
+    display: inline-flexbox;
+}
+nav ul ul li {
+position: relative;
+margin: 0px;
+width: 240px;
+float: none;
+display: list-item;
+display: inline-flexbox; 
+border-bottom: 1px solid rgb(0,0,0,0.3);
+
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: -200px;
+}
+nav { z-index: 1;position :relative}
+
+/* card slider  */
+/* .abc{
+    display: none;
+} */
+
+
+  li {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    box-sizing: border-box;
+  }
+  /* *********************
+  reusable code
+  ***********************/
+.section-hero {
+margin-top:     50px;
+}
+.grid{
+    display: grid;
+    gap: 9rem;
+
+}
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+    
+}
+
+.grid-two-column
+
+{
+ grid-template-columns: repeat(2,1fr);
+
+}
+.grid-two-column-bsector{
+    padding-bottom: 100px;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.btnmain{
+    background: #ffff;
+    padding: 1.6rem 3.2rem;
+    border: none;
+    color: #5100ff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 500;
+   cursor:pointer;
+   transition: all0.3s ease;
+   -webkit-transition: all 0.3s ease 0s;
+   -moz-transition: all 0.3s ease 0s;
+   -o-transition: all 0.3s ease 0s;
+
+}
+.btn:hover,
+.btn:active{
+    box-shadow: 0 2rem 2rem 0 rgba(92, 103, 203, 0.3);
+}
+
+/*====================================== 
+bsector
+========================================= */
+
+.card-img-top{
+    width: 400px;
+   height: 400px;
+}
+.section-bsector{
+    margin-top:40 px;
+    background-color: #bababa;
+   
+}
+.bcard-heading{
+text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f60000;
+    /* text-decoration: underline; */
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+/* ===========================================
+hero section start 
+============================================= */
+.section-hero{
+    background-color: #ffff;
+}
+
+.section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-img{
+    max-width: 80%;
+   
+}
+
+.hero-top-data{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f60000;
+    text-decoration: underline;
+    
+}
+.hero-heading{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:  2.4rem;
+
+}
+
+.hero-para{
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+/* /this code for any image chro traf say adjust kar deta hai grig may  */
+.section-hero-image{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ 
+/*========================================= 
+under bector 
+==========================================*/
+/* card area ka height and width kysy krty hain  */
+ /* .card-usector-one{
+    
+display: flex; 
+background-color: #ffffff;
+justify-content: center;
+} */
+/* .card-usector-on{
+    margin: 0px;
+} */
+/* .section-bsector{
+    margin-top:40 px;
+    background-color: rgba(24, 24, 25, 0.3);
+} */
+
+
+ /* top margin k liy hain*/  
+/* .grid-two-column-usector{
+    grid-template-columns: repeat(3,1fr);
+    margin: 100px;  
+    margin-inline: 10px;
+}  */
+.section-usector{
+    margin-top: 10px;
+    background-color: #ffff;
+  
+}
+.text-para{
+    font-style: normal;
+    
+}
+.ucard-img-top{
+    /* width: 348px; */
+   height: 300px;
+}
+
+.card-footer{
+    text-align: right;
+}
+.card-footer .text-muted{
+    text-align: start;
+}
+/* 
+.card{
+    background-color: #b10d0d;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+} */
+/* .card-image{
+    background-color: #33ffff;
+    height: 150px;
+    margin-bottom: 15px;
+
+} */
+
+/* .container1{
+    display: flex;
+    justify-content: center;
+} */
+
+/* retail apral section  */
+
+.section-retail{
+    background-color: #eab729;
+    padding-bottom: 100px;
+}
+/* contact us section  */
+
+
+.grid-two-column-contact{
+    /* padding-bottom: 100px; */
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+.card-contact-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+}
+
+
+.section-contact{
+    padding: 2rem;
+}
+/* ========================== */
+/* section chose */
+/* ======================= */
+.grid-two-column-chose{
+    /* padding-bottom: 100px; */
+    grid-template-columns: repeat(2,1fr);
+    background-color: #000000;
+   
+}
+
+.section-chose{
+    background: #1b1b1c;
+}
+/* ======================== */
+
+/* customer section  */
+/* ====================== */
+
+.ccard-img-top{
+    /* width: 135px; */
+   height: 100px;
+
+}
+/* footer section  */
+.section-foot{
+    background-color: #433f4a;
+}
