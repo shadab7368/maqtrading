@@ -506,9 +506,22 @@ h6,
     left: 0;
     right: 0;
     bottom: 0; 
- background: rgb(0, 0, 0);
+ background: rgb(245, 242, 242);
     z-index: 1;
 }
+/* @media (min-width: 765.98px) {
+    .card{
+        width: 270px;
+    max-width: 60rem;
+    max-height: 70rem;
+    margin: 10px;
+    max-width: 60rem;
+    max-height: 600rem;
+       
+    } 
+   
+
+} */
 
 .card{
     background-color: #2a2a2a;
